@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {% if title %}{{ title }} - Asia{% else %}Добро пожаловать!{% endif %}
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Добро пожаловать!</h1>
+            <p class="lead">Web-приложение кафе азиатской кухни "Octopus"</p>
+            <hr class="my-4">
+            <p class="lead"></p>
+            <form method="GET" action="/logout"><button type="submit" class="btn btn-success">Выход из системы</button></form>
+        </div>
+    </div>
+{% endblock %}

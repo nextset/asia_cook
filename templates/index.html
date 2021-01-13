@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="container">
+        <div class="text-center">
+            <img src="{{ url_for('static', filename='img/oct.png') }}" width="288" height="228">
+            <h1 class="display-4">Добро пожаловать!</h1>
+            <p class="lead">Web-приложение кафе азиатской кухни "Octopus"</p>
+            <hr class="my-4">
+            <p class="lead">
+            <form method="GET" action="/main"><button type="submit" class="btn btn-info">Вход в систему</button></form>
+            </p>
+        </div>
+    </div>
+{% endblock %}
